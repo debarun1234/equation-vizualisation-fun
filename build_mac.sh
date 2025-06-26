@@ -11,8 +11,13 @@ source .venv/bin/activate
 
 # Step 2: Install requirements
 pip install --upgrade pip
-pip install -r requirements.txt
-pip install py2app create-dmg
+pip install PyQt5 matplotlib numpy scipy Pillow imageio py2app
+
+# Step 2.1: Check for create-dmg tool
+if ! command -v create-dmg &> /dev/null; then
+    echo "ERROR: 'create-dmg' is not installed. Please install it with: brew install create-dmg"
+    exit 1
+fi
 
 # Step 2.5: Convert PNG icon to ICNS (macOS icon format)
 ICON_PNG="assets/app_icon.png"
@@ -58,6 +63,12 @@ EOF
 
 # Step 4: Build the .app bundle
 python setup.py py2app
+
+# Check if the .app bundle was created
+if [ ! -d "dist/main.app" ]; then
+    echo "ERROR: dist/main.app was not created. Check the output above for errors during py2app packaging."
+    exit 1
+fi
 
 # Step 5: Create the DMG (requires create-dmg)
 # Add Applications shortcut for drag-and-drop install
