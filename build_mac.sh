@@ -51,8 +51,9 @@ APP = ['main.py']
 DATA_FILES = []
 OPTIONS = {
     'argv_emulation': True,
-    'packages': ['PyQt5', 'matplotlib', 'numpy', 'scipy', 'Pillow', 'imageio'],
+    'packages': ['PyQt5', 'matplotlib', 'numpy', 'scipy', 'PIL', 'imageio'],
     'iconfile': 'assets/app_icon.icns',
+    'includes': ['PIL'],
 }
 
 setup(
