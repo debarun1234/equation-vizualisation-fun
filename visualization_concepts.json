@@ -1,0 +1,186 @@
+{
+    "FourierSeries": [
+        {
+            "name": "Square Wave",
+            "equation": "f(x) = (4/\u03c0) * \u2211 (1/n) * sin(n*x), n = 1,3,5,...",
+            "type": "Fourier Series",
+            "visual": "Sharp edges, epicycle approximation",
+            "tags": [
+                "waveform",
+                "periodic"
+            ]
+        },
+        {
+            "name": "Sawtooth Wave",
+            "equation": "f(x) = (2/\u03c0) * \u2211 (-1)^(n+1)/n * sin(n*x)",
+            "type": "Fourier Series",
+            "visual": "Linear rise and drop",
+            "tags": [
+                "waveform",
+                "periodic"
+            ]
+        },
+        {
+            "name": "Triangle Wave",
+            "equation": "f(x) = (8/\u03c0^2) * \u2211 (-1)^((n-1)/2)/n^2 * sin(n*x), n odd",
+            "type": "Fourier Series",
+            "visual": "Smooth triangular waveform",
+            "tags": [
+                "waveform",
+                "periodic"
+            ]
+        }
+    ],
+    "ParametricCurves": [
+        {
+            "name": "Lissajous Curve",
+            "equation": "x(t) = A*sin(a*t + \u03b4), y(t) = B*sin(b*t)",
+            "type": "Parametric",
+            "visual": "Crossing sine wave paths",
+            "tags": [
+                "parametric",
+                "harmonic"
+            ]
+        },
+        {
+            "name": "Epicycloid",
+            "equation": "x(t) = (R + r)*cos(t) - r*cos((R + r)/r * t), y(t) = (R + r)*sin(t) - r*sin((R + r)/r * t)",
+            "type": "Parametric",
+            "visual": "Rolling circle pattern",
+            "tags": [
+                "geometric",
+                "cyclic"
+            ]
+        }
+    ],
+    "TaylorSeries": [
+        {
+            "name": "Exponential Function",
+            "equation": "e^x = \u2211 x^n / n!",
+            "type": "Taylor Series",
+            "visual": "Smooth exponential curve building up",
+            "tags": [
+                "series",
+                "approximation"
+            ]
+        },
+        {
+            "name": "Sine Function",
+            "equation": "sin(x) = x - x^3/3! + x^5/5! - ...",
+            "type": "Taylor Series",
+            "visual": "Waveform built using polynomial terms",
+            "tags": [
+                "series",
+                "oscillation"
+            ]
+        }
+    ],
+    "ComplexFunctions": [
+        {
+            "name": "z^n",
+            "equation": "f(z) = z^n",
+            "type": "Complex Mapping",
+            "visual": "Rotation and scaling in complex plane",
+            "tags": [
+                "complex",
+                "visual mapping"
+            ]
+        },
+        {
+            "name": "1/z",
+            "equation": "f(z) = 1/z",
+            "type": "Complex Mapping",
+            "visual": "Inversion with rotation",
+            "tags": [
+                "complex",
+                "inverse"
+            ]
+        }
+    ],
+    "SignalProcessing": [
+        {
+            "name": "Voice to Vector Drawing",
+            "equation": "Fourier Transform of waveform",
+            "type": "Signal Processing",
+            "visual": "Epicycles from voice signal",
+            "tags": [
+                "audio",
+                "fourier"
+            ]
+        }
+    ],
+    "LinearAlgebra": [
+        {
+            "name": "Matrix Rotation",
+            "equation": "R(\u03b8) = [[cos\u03b8, -sin\u03b8], [sin\u03b8, cos\u03b8]]",
+            "type": "Transformation",
+            "visual": "Vector field rotation",
+            "tags": [
+                "matrix",
+                "geometry"
+            ]
+        },
+        {
+            "name": "Eigenvectors",
+            "equation": "Av = \u03bbv",
+            "type": "Linear Algebra",
+            "visual": "Invariant direction under transformation",
+            "tags": [
+                "linear algebra",
+                "eigen"
+            ]
+        }
+    ],
+    "ChebyshevPolynomials": [
+        {
+            "name": "Chebyshev Polynomial Tn",
+            "equation": "T_n(x) = cos(n arccos(x))",
+            "type": "Polynomial",
+            "visual": "Oscillatory, orthogonal polynomials",
+            "tags": [
+                "chebyshev",
+                "orthogonal",
+                "polynomial"
+            ]
+        }
+    ],
+    "BesselFunctions": [
+        {
+            "name": "Bessel Function Jn",
+            "equation": "J_n(x) = (1/π) ∫₀^π cos(nτ - x sin τ) dτ",
+            "type": "Special Function",
+            "visual": "Oscillatory, decaying amplitude",
+            "tags": [
+                "bessel",
+                "special",
+                "oscillatory"
+            ]
+        }
+    ],
+    "LegendrePolynomials": [
+        {
+            "name": "Legendre Polynomial Pn",
+            "equation": "P_n(x) = (1/2^n n!) d^n/dx^n (x^2 - 1)^n",
+            "type": "Polynomial",
+            "visual": "Orthogonal polynomials on [-1,1]",
+            "tags": [
+                "legendre",
+                "orthogonal",
+                "polynomial"
+            ]
+        }
+    ],
+    "WaveletTransforms": [
+        {
+            "name": "Haar Wavelet",
+            "equation": "ψ(t) = 1 (0 ≤ t < 0.5), -1 (0.5 ≤ t < 1), 0 otherwise",
+            "type": "Wavelet",
+            "visual": "Step-like, localized in time",
+            "tags": [
+                "wavelet",
+                "haar",
+                "localized"
+            ]
+        }
+    ]
+}
