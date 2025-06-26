@@ -8,10 +8,12 @@ set -e
 # Step 1: Create and activate virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
+PYTHON=".venv/bin/python"
+PIP=".venv/bin/pip"
 
 # Step 2: Install requirements
-pip install --upgrade pip
-pip install PyQt5 matplotlib numpy scipy Pillow imageio py2app
+$PIP install --upgrade pip
+$PIP install PyQt5 matplotlib numpy scipy Pillow imageio py2app
 
 # Step 2.1: Check for create-dmg tool
 if ! command -v create-dmg &> /dev/null; then
@@ -62,7 +64,7 @@ setup(
 EOF
 
 # Step 4: Build the .app bundle
-python setup.py py2app
+$PYTHON setup.py py2app
 
 # Check if the .app bundle was created
 if [ ! -d "dist/main.app" ]; then
