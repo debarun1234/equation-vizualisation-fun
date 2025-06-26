@@ -1,97 +1,48 @@
-# Release Notes - Mathematical Series Visualizer
+# Release Notes
 
-## Version 1.0.0 - Initial Release 🎉
+## v1.0.0 – Initial Public Release (2025-06-26)
 
-### 🎯 What's New
+### 🚀 Highlights
+- **First public release of the Mathematical Series Visualizer!**
+- Interactive, educational, and extensible Python application for visualizing mathematical series and curves.
 
-**Mathematical Series Visualizer** is now ready for the world! This interactive Python application brings mathematical concepts to life through animated epicycles and beautiful visualizations.
+### ✨ Features
+- **Animated Epicycles**: Visualize Fourier, Taylor, and parametric series with rotating vectors.
+- **Three-Panel UI**: Epicycles, individual traces, and combined curve, all animated in real time.
+- **Concepts Supported**:
+  - Fourier Series: Square, Triangle, Sawtooth waves
+  - Taylor Series: Exponential, Sine, Cosine
+  - Parametric: Lissajous curves, Epicycloids
+  - Custom equation input (user-defined functions)
+- **Formula Display**: Scientific notation, readable explanations, and physical meaning for each concept.
+- **Parameter Controls**: Adjust amplitude, frequency, phase, and number of terms live.
+- **Color Themes**: Multiple palettes (dark, light, rainbow, ocean, sunset, etc.)
+- **Export**: Save high-quality PNG images and animated GIFs of your visualizations.
+- **Individual Traces**: Toggle to see each epicycle’s contribution.
+- **Educational Focus**: Designed for teaching, learning, and exploring mathematical series.
 
-### ✨ Key Features
+### 🛠️ Technical
+- **PyQt5** GUI with Matplotlib integration
+- **Modular codebase**: Easily add new concepts via JSON and Python
+- **Performance**: Optimized for 20+ terms in real time
+- **Extensible**: Ready for advanced features (video export, 3D, frequency domain, etc.)
 
-#### 🎪 Interactive Visualizations
-- **Fourier Series**: Square wave, triangle wave, sawtooth wave with animated epicycles
-- **Taylor Series**: Exponential, sine, and cosine function approximations  
-- **Parametric Curves**: Lissajous curves and epicycloids
-- **Custom Equations**: Input your own mathematical functions
+### 📝 How to Use
+- Select a concept from the dropdown
+- Adjust parameters and watch the animation
+- Try different color themes
+- Save images or GIFs for presentations or teaching
+- Input your own custom equations for instant visualization
 
-#### 🎨 Advanced User Interface
-- **Three-Panel Layout**: Epicycles animation, individual traces, combined result
-- **Real-time Parameter Control**: Amplitude, frequency, phase adjustment
-- **Multiple Themes**: Dark, light, colorful, rainbow, ocean, sunset
-- **Formula Display**: Scientific notation with mathematical explanations
+### 🐞 Known Issues / Limitations
+- Video (MP4) and data (CSV/JSON) export are planned but not yet implemented
+- Some advanced features (3D, mouse interaction, side-by-side comparison) are UI stubs for future updates
+- Custom equation parser supports basic sin/cos/exp/log only
 
-#### 💾 Export Capabilities
-- **PNG Images**: High-quality static visualizations
-- **GIF Animations**: Smooth animated exports (fully implemented)
-- **Future Ready**: Stubs for MP4 video and CSV/JSON data export
-
-#### 🔧 Technical Excellence
-- **Modular Architecture**: JSON-based concept configuration system
-- **Performance Optimized**: Efficient animation with 20+ terms
-- **Educational Focus**: Physical meanings and convergence properties explained
-- **Extensible Design**: Easy to add new mathematical concepts
-
-### 🚀 Installation & Usage
-
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/equation-vizualization-fun.git
-cd equation-vizualization-fun
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the application
-python main.py
-```
-
-### 📚 Educational Applications
-
-Perfect for:
-- **Mathematics Education**: Visual understanding of series convergence
-- **Physics Classes**: Harmonic motion and wave analysis
-- **Engineering**: Signal processing and frequency analysis
-- **Research**: Mathematical visualization and exploration
-
-### 🏗️ Technical Stack
-
-- **Python 3.10+**
-- **PyQt5** for GUI framework
-- **Matplotlib** for visualization and animation
-- **NumPy** for mathematical computations
-- **JSON** for concept configuration
-
-### 📊 Project Statistics
-
-- **27 files** with comprehensive functionality
-- **2,800+ lines** of well-documented code
-- **12 mathematical concepts** ready to explore
-- **6 color themes** for customization
-- **3-panel visualization** system
-
-### 🎯 What's Next
-
-Future enhancements planned:
-- **Video Export (MP4)**: Full animation export
-- **Data Export (CSV/JSON)**: Export mathematical data
-- **3D Visualizations**: Three-dimensional epicycles
-- **Complex plane**: Complex number visualizations
-- **Frequency domain**: FFT and spectral analysis
-- **Mouse Interaction**: Click and drag epicycles
-- **Side-by-side Comparison**: Multiple concepts at once
-
-### 🤝 Contributing
-
-We welcome contributions! See our contributing guidelines in the repository.
-
-### 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-### 🙏 Acknowledgments
-
-Special thanks to the mathematical visualization community and all the educators who inspire visual learning!
+### 🙏 Thanks
+- To the open-source community for PyQt5, Matplotlib, and NumPy
+- To educators and students for inspiration and feedback
 
 ---
 
-**Download the latest release and start exploring mathematics in a whole new way!** 🔬✨
+**Enjoy exploring mathematics visually!**
