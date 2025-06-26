@@ -1,23 +1,38 @@
-# Mathematical Series Visualization
+# 🎯 Mathematical Series Visualizer
 
-A PyQt5-based application for visualizing mathematical series like Fourier Series and Taylor Series using animated rotating vectors (epicycles) and graphs.
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
+[![PyQt5](https://img.shields.io/badge/PyQt5-5.15+-green.svg)](https://pypi.org/project/PyQt5/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.5+-orange.svg)](https://matplotlib.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Features
+An interactive Python application for visualizing mathematical series using animated rotating vectors (epicycles) and graphs. Perfect for education, research, and mathematical exploration!
 
-🎯 **Interactive Visualizations**
-- Animated epicycle representations of mathematical series
-- Real-time curve generation and tracing
-- Multiple mathematical concepts supported
+![Demo](assets/sawtooth_wave_enhanced_visualization.png)
 
-📊 **Supported Mathematical Concepts**
-- **Fourier Series**: Square Wave, Triangle Wave, Sawtooth Wave
-- **Taylor Series**: Exponential Function, Sine Function
-- **Parametric Curves**: Lissajous Curves, Epicycloid
-- **Complex Functions**: z^n, 1/z mappings
-- **Signal Processing**: Voice to vector drawing concepts
-- **Linear Algebra**: Matrix rotations and eigenvectors
+## ✨ Features
 
-🎨 **Customization Options**
+### � Interactive Visualizations
+- **Fourier Series**: Square wave, triangle wave, sawtooth wave with animated epicycles
+- **Taylor Series**: Exponential, sine, and cosine function approximations
+- **Parametric Curves**: Lissajous curves and epicycloids
+- **Custom Equations**: Input your own mathematical functions
+
+### 🎨 Advanced UI
+- **Three-Panel Layout**: Epicycles animation, individual traces, combined result
+- **Real-time Parameter Control**: Amplitude, frequency, phase adjustment
+- **Multiple Themes**: Dark, light, colorful, rainbow, ocean, sunset
+- **Formula Display**: Scientific notation with mathematical explanations
+
+### 💾 Export Options
+- **PNG Images**: High-quality static visualizations
+- **GIF Animations**: Smooth animated exports
+- **Future**: Video (MP4) and data (CSV/JSON) export planned
+
+### 🔧 Technical Features
+- **Modular Architecture**: JSON-based concept configuration
+- **Performance Optimized**: Efficient animation with 20+ terms
+- **Educational Focus**: Physical meanings and convergence properties explained
+- **Extensible Design**: Easy to add new mathematical concepts
 - Multiple color themes (Dark, Light, Ocean, Sunset)
 - Adjustable number of terms (1-25)
 - Play/Pause/Reset animation controls
